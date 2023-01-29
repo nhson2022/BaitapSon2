@@ -130,3 +130,25 @@ Devise.setup do |config|
 
   config.navigational_formats = ['*/*', :html, :turbo_stream]
 end
+``
+git status
+git add -A           --CAM khi lam du an chung nhieu nguoi
+git commit -m "Config alert response for devise"
+git push origin main
+``
+
+## Create controller pages home and info
+rails g controller pages home info
+
+## [Admin] Create Article
+Setup action text, active storage 
+https://guides.rubyonrails.org/active_storage_overview.html 
+https://guides.rubyonrails.org/action_text_overview.html
+    Setup Active Storage
+    bin/rails active_storage:install
+    bin/rails db:migrate
+    Setup Action Text
+    bin/rails action_text:install
+    bin/rails db:migrate
+    Setup model, pages
+    rails g scaffold Article title active:boolean
