@@ -1,4 +1,4 @@
-# BaitapSon2
+# BaitapSon2 - Authentication
 
 ## Cai dat git access
 ```
@@ -32,6 +32,10 @@ git status
 git diff Gemfile
 git add Gemfile
 git commit -m "Them gem devise"
+
+git add README.md
+git commit -m "Cap nhat README"
+git push origin main
 ``
 
 
